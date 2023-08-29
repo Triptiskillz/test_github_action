@@ -1,9 +1,10 @@
-name: CI
-on:
-  workflow_dispatch:
+name: First Workflow
+on: workflow_dispatch
 jobs:
-  firstjob:
+  first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: print greeting
-      - run : echo "hello world"
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
